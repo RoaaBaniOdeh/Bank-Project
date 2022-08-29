@@ -4,7 +4,7 @@ class Transactions extends Component {
   render() {
    const transactions = this.props.transactions
     return ( 
-      transactions.map((t)=>{return <Transaction transaction={t}/>})
+      transactions.map((t)=>{return <Transaction transaction={t} deleteTransaction={this.props.deleteTransaction}/>})
     );
   }
 }
