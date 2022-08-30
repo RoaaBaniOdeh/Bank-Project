@@ -30,7 +30,7 @@ router.post("/transaction", function (req, res) {
 });
 
 router.delete("/transaction/:transactionId", function (req, res) {
-  Bank.findByIdAndDelete(req.params.transactionId)
-
+  Bank.findByIdAndDelete(req.params.transactionId,(error)=>{})
+  res.end()
 });
 module.exports = router;

@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 class Transaction extends Component {
   delete = () =>{
- this.props.deleteTransaction(this.props.transaction.id)
+ this.props.deleteTransaction(this.props.transaction._id)
+
   }
   render() {
     return ( 
